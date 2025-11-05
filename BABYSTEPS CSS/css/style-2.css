@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.color-container {
+    width: 90%;
+    max-width: 800px;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #070124;
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+/* Estilos de la Lista de Colores (4 Columnas) */
+
+.color-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    column-count: 4; /* Número de columnas */
+    column-gap: 20px; /* Espacio entre columnas */
+}
+
+.color-list li {
+    font-size: 18px;
+    padding: 5px 0;
+    line-height: 1.5;
+    font-weight: bold; /* Texto en negrita */
+    break-inside: avoid; /*Evitar que un elemento se divida entre columnas */
+    -webkit-column-break-inside: avoid; /* Para compatibilidad */
+    page-break-inside: avoid;
+}
+
+/* --- Definición de los Colores de Texto --- */
+
+.cool-gray { color: #8a8a8a; }
+.warm-gray { color: #a3a3a3; }
+.amber { color: #d97706; }
+.green { color: #16a34a; }
+
+.cyan { color: #06b6d4; }
+.red { color: #ef4444; }
+.yellow { color: #facc15; }
+.emerald { color: #059669; }
+
+.sky { color: #0ea5e9; }
+.orange { color: #f97316; }
+.lime { color: #84cc16; }
+.teal { color: #0d9488; }
+
+.fuchsia { color: #c026d3; }
+.pink { color: #ec4899; }
+.rose { color: #f43f5e; }
+.blue-gray { color: #64748b; }
+
+.purple { color: #9333ea; }
+.violet { color: #7c3aed; }
+.indigo { color: #4f46e5; }
+.blue { color: #3b82f6; }
