@@ -15,4 +15,60 @@ body {
     font-weight: bold;
     margin-bottom: 30px;
 }
+/* ---------------------------------
+   Estilos de las Secciones Grises
+   --------------------------------- */
+
+.section-block {
+    margin-bottom: 40px;
+}
+
+.section-header {
+    background-color: grey;
+    color: white;
+    font-size: 1.5em;
+    font-weight: normal;
+    padding: 10px 20px;
+    margin: 0;
+}
+
+/* ---------------------------------
+   Contenido y Logo (Estructura de Bloque)
+   --------------------------------- */
+
+.content-wrapper {
+    padding: 20px 0;
+}
+
+.logo-text-block {
+    display: flow-root;
+}
+
+.tech-logo {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.logo-container {
+    float: left;
+    margin-right: 20px;
+    margin-top: 10px;
+    width: 150px;
+}
+
+.logo-abrr {
+    position: absolute;
+    font-size: 2em;
+    font-weight: bold;
+    color:white;
+    z-index: 10;
+}
+
+.section-text {
+    line-height: 1.6;
+    text-align: justify;
+}
+
+
 
