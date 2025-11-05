@@ -57,14 +57,6 @@ body {
     width: 150px;
 }
 
-.logo-abrr {
-    position: absolute;
-    font-size: 2em;
-    font-weight: bold;
-    color:white;
-    z-index: 10;
-}
-
 .section-text {
     line-height: 1.6;
     text-align: justify;
