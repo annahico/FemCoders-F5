@@ -1,1 +1,40 @@
- 
+body {
+    background-color: #00001a; /* Color de fondo muy oscuro. */
+    display: flex; /* Usamos Flexbox para centrar el contenedor .grid tanto horizontal como verticalmente. */
+    justify-content: center; /* Centra horizontalmente el contenido del body. */
+    align-items: center;   /* Centra verticalmente el contenido del body. */
+    height: 100vh; /* Altura del viewport para que el centrado vertical ocupe toda la pantalla. */
+    margin: 0; /* Quita el margen por defecto del body para evitar desplazamientos indeseados. */
+}
+
+/* GRID: contenedor de la rejilla de cuadrados */
+.grid {
+    display: grid;  /* Activamos Grid Layout para colocar los cuadrados en filas y columnas. */
+    grid-template-columns: repeat(7, 50px); /* Definimos 7 columnas iguales de 50px cada una. Si ponemos 6 aparece un cuadrado solo en la última fila */
+    grid-template-rows: repeat(7, 50px);   /* Definimos 7 filas iguales de 50px cada una. */
+    gap: 10px; /* Espacio (gap) entre filas y columnas: 10px. */
+}
+
+/* SQUARE: estilo base para cada cuadrado */
+.square {
+    width: 50px; /* Ancho fijo del cuadrado. */
+    height: 50px;  /* Alto fijo del cuadrado. */
+    border-radius: 6px;  /* Bordes redondeados ligeramente (6px). */
+    box-shadow: 0 0 8px rgba(0,0,0,0.5); /* Sombra sutil alrededor del cuadrado. */
+}
+
+/* Colores del degradado (azul → violeta → rosa → rojo) */
+
+/* ----------------------
+   Degradado por columnas:
+   reglas nth-child para asignar color a cada columna.
+   nth-child(7n+1) afecta al 1º, 8º, 15º, ... elemento.
+   Como la grid tiene 7 columnas, esta fórmula colorea columnas completas.
+   ---------------------- */
+.square:nth-child(7n+1) { background-color: #3a34d3; } /* Primera columna (azules más profundos). */
+.square:nth-child(7n+2) { background-color: #5c3bd7; } /* Segunda columna (azul-violeta). */
+.square:nth-child(7n+3) { background-color: #7e42da; } /* Tercera columna (violeta claro). */
+.square:nth-child(7n+4) { background-color: #a148de; } /* Cuarta columna (violeta-morado). */
+.square:nth-child(7n+5) { background-color: #c34fe1; } /* Quinta columna (morado-rosado). */
+.square:nth-child(7n+6) { background-color: #e656e5; } /* Sexta columna (rosa). */
+.square:nth-child(7n+7) { background-color: #ff5ce8; } /* Séptima columna (rosa-anaranjado / rojo suave). */
