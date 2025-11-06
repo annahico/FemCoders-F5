@@ -44,6 +44,11 @@ h1 {
   text-align: center;
 }
 
+.half-row {
+  display: flex;
+  gap: 5px;
+  flex: 2;
+}
 /* === Colores === */
 
 /* Fila 1 */
